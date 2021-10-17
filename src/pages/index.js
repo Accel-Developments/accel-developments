@@ -1,7 +1,19 @@
 import React from 'react'
+import styled from "styled-components";
+
+const Home = styled.div`
+background: #108db8;
+`
+
+const Title = styled.h1`
+font-size: calc(2rem + 1vw);
+color: aliceblue;
+`
 
 export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <h1>Welcome to React-Static</h1>
-  </div>
+<Home>
+    <Title>
+    Accel Developments
+    </Title>
+</Home>
 )
