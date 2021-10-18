@@ -4,7 +4,7 @@ import Header from "./components/header/header"
 import FullPage from "./components/ui-components/PageStyles";
 import Helmet from "react-helmet"
 import HeroMain from "./components/hero/hero";
-
+import ComingSoon from "./components/banner/banner";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
               <FullPage>
                   <Header />
                 <HeroMain/>
+                  <ComingSoon/>
               </FullPage>
           </Styles.Wrapper>
       </div>
