@@ -22,7 +22,7 @@ const Navbar = {
       align-self: flex-start;
       padding: 15px 50px;
       height: calc(1vw + 10vh);
-      display: flex;
+      display: inline-flex;
       justify-content: space-between;
       align-items: center;
       min-width: 100vw;
@@ -49,11 +49,11 @@ const Navbar = {
       }
     `,
     Items: styled.ul`
-      display: flex;
+      display: inline-flex;
       max-width: 100em;
       position: relative;
-      left: -20vw;
-      
+      justify-content: left;
+      left: -15vw;
       @media screen and (max-width:1024px){
         display: none;
       }
@@ -62,14 +62,14 @@ const Navbar = {
       margin: 0 2.5vw;
       width: fit-content;
       font-size: 1.25em;
-      text-align: center;
+      text-align: left;
       cursor: pointer;
       color: rgba(255, 255, 255, 0.84);
       position: relative;
       letter-spacing: 0.1rem;
       text-decoration: none;
       display: inline-flex;
-      justify-content: right;
+      justify-content: left;
 
       &::after {
         position: absolute;
