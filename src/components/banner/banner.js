@@ -10,14 +10,18 @@ const Content = styled.div `
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;`
+  justify-content: center;
+ @media only screen and (max-width: 440px){
+   padding: 5vh 1vw 0 1vw;
+ }
+`
 
 const Heading = styled.text `
   font-size: calc(1.5rem + 1vw);
   font-style: normal;
   color:#36316b;
   font-weight: 700;
-  line-height: calc(1rem + 1vw);
+  line-height: calc(2rem + 1vw);
   text-align: center;
 `
 

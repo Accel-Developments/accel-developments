@@ -17,6 +17,12 @@ const HeroWrapper = styled.div`
   overflow: hidden;
   padding: calc(200px + 1vw) calc(100px + 1vw);
   min-width: 100vw;
+  @media only screen and (max-width: 726px){
+    min-height: 65vh;
+    max-height: 65vh;
+    padding: calc(100px + 1vw) calc(20px + 1vw);
+
+  }
 `
 
 const HeroBg = styled(HeroWrapper)`
@@ -62,6 +68,7 @@ const HeroContent = styled.div`
   bottom: 5vh;
   color: white;
   width: 100ch;
+  
 `
 const HeroText = styled.h1 `
   font-size: calc(3rem + 1vw);
@@ -70,7 +77,7 @@ const HeroText = styled.h1 `
 
 
   @media only screen and (max-width: 726px){
-    font-size: calc(20px + 1vw);
+    font-size: calc(22px + 1vw);
     line-height: 125%;
 
   }
@@ -93,6 +100,10 @@ const HeroBtn = styled(Button)`
 
   &:hover {
     color: #000;
+  }
+  
+  @media  only screen and (max-width: 440px){
+    padding: 1rem 2rem;
   }
 `
 
