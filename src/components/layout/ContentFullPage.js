@@ -9,14 +9,15 @@ const Wrapper = styled.div`
 `
 
 const Content = styled.div`
-  max-width: 1600px;
+  max-width: 100vw;
+  min-width: 100%;
 `
 
 const ContentFullPage = ({ children }) => (
   <Wrapper>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-              <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
                     rel="stylesheet"/>
     <Content>{children}</Content>
   </Wrapper>

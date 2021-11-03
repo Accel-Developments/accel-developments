@@ -1,10 +1,9 @@
 import React from 'react'
 import { Root, Routes } from 'react-static'
 //
-import Header from "./components/organisms/header/header";
-import Footer from "./components/organisms/footer/footer";
-import PrefooterBanner from "./components/organisms/prefooter-banner/prefooter-banner";
-import { Router } from './components/atoms/Router'
+import Header from "./components/templates/header/header";
+import PrefooterBanner from "./components/templates/prefooter-banner/prefooter-banner";
+import { Router } from '@reach/router'
 import ContentFullPage from "./components/layout/ContentFullPage";
 import {GlobalStyle} from "./style";
 import styled from "styled-components";
@@ -33,8 +32,8 @@ const Loading = () => {
 function App() {
     return (
         <Root>
+            <><Header/>
             <ContentFullPage>
-                <Header/>
                 <GlobalStyle/>
                 <React.Suspense fallback={<Loading/>}>
                     <Router>
@@ -42,8 +41,9 @@ function App() {
                     </Router>
                 </React.Suspense>
                 <PrefooterBanner/>
-                <Footer/>
+
             </ContentFullPage>
+            </>
         </Root>
     )
 }

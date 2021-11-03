@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-import Waves from "./waves.png"
 
 
 
@@ -9,7 +8,7 @@ width: 100vw;
   position: relative;
   z-index: 999;
   min-width:100%;
-  margin-top: -10vw;
+  margin-top: -1vw;
   background-size: cover ;
   height: 100%;
 
@@ -20,7 +19,6 @@ width: 100vw;
 const WaveDc = () => {
     return (
 <DecorationStyle>
-    <img src={Waves}/>
 </DecorationStyle>
     )
 }

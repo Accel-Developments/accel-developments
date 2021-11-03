@@ -1,18 +1,20 @@
-igitmport React from 'react'
-import Hero from "../components/organisms/hero/hero";
-import CtaBanner from "../components/organisms/cta-banner/cta-banner";
-import WaveDc from "../components/molecules/decorative-wave/decorative-break"
-import CardList from "../components/templates/ServiceCardList";
-import ContactBanner from "../components/organisms/contact/ContactBanner";
+import React from 'react'
+import Hero from "../components/templates/hero/hero";
+import ContactBanner from "../components/templates/contact/ContactBanner";
+import ServicesGrid from "../components/templates/services-grid/services";
+import CtaBanner from "../components/templates/cta-banner/cta-banner"
+import Values from "../components/templates/values/values"
 
 const Home = () => {
     return (
         <>
             <Hero/>
-            <WaveDc/>
+            <ServicesGrid/>
+            <callToAction/>
             <CtaBanner/>
-            <CardList/>
+            <Values/>
             <ContactBanner/>
+
         </>
 
     )

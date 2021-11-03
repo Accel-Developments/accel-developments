@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
+const poppinsUrl = "https://fonts.googleapis.com/css2?family=Poppins"
 export const GlobalStyle = createGlobalStyle`
+  @import url("${poppinsUrl}");
 
 
   * {
@@ -8,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
     margin: 0;

@@ -10,7 +10,7 @@ export default {
       {
         location: path.resolve('./src/pages'),
       }]
-    ,"react-static-plugin-svg", "react-static-plugin-styled-components", "react-static-plugin-reach-router", "react-static-plugin-sitemap",
+    ,"react-static-plugin-svg", "react-static-plugin-styled-components", "react-static-plugin-reach-router",  "react-static-plugin-sitemap",
   ],
 
   Document: ({
@@ -23,7 +23,7 @@ export default {
       <Html lang="en-US">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Gcnetwiz Investments</title>
+          <title>Accel - Exchange Value</title>
         </Head>
         <Body>{children}</Body>
       </Html>
