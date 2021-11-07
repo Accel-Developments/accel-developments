@@ -1,0 +1,64 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "/home/charlize/accel-developments/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/home/charlize/accel-developments/src/pages"
+      }
+    ],
+    "react-static-plugin-svg",
+    "react-static-plugin-styled-components",
+    "react-static-plugin-reach-router",
+    "react-static-plugin-sitemap",
+    "/home/charlize/accel-developments"
+  ],
+  "devServer": {
+    "host": "127.0.0.1",
+    "port": 1234
+  },
+  "paths": {
+    "ROOT": "/home/charlize/accel-developments",
+    "SRC": "/home/charlize/accel-developments/src",
+    "DIST": "/home/charlize/accel-developments/dist",
+    "ASSETS": "/home/charlize/accel-developments/dist",
+    "PLUGINS": "/home/charlize/accel-developments/plugins",
+    "TEMP": "/home/charlize/accel-developments/tmp",
+    "ARTIFACTS": "/home/charlize/accel-developments/artifacts",
+    "PUBLIC": "/home/charlize/accel-developments/public",
+    "NODE_MODULES": "/home/charlize/accel-developments/node_modules",
+    "EXCLUDE_MODULES": "/home/charlize/accel-developments/node_modules",
+    "PACKAGE": "/home/charlize/accel-developments/package.json",
+    "HTML_TEMPLATE": "/home/charlize/accel-developments/dist/index.html",
+    "STATIC_DATA": "/home/charlize/accel-developments/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
