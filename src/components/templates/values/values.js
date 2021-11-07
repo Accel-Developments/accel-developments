@@ -8,14 +8,15 @@ import Bg from "./bg.jpg"
 
 const Banner = styled.div `
   width: 100vw;
+  background: url(${Bg}) bottom;
+  background-size: cover;
 
 `
 
 const ImageBanner = styled.div`
   min-height: calc(50rem + 1vw);
   min-width:100%;
-  background: url(${Bg});
-  background-size: cover;
+
 `
 const ImageBannerText = styled.div   `
   margin: 0 20vw;
@@ -32,39 +33,7 @@ const ImageBannerText = styled.div   `
 `
 const Wrapper = styled.div`
   padding: 10vh 1vw;
-  background: linear-gradient(354deg, #feac5e, #ec6179, #c779d0, #32a3aa, #4b5ec8);
-  background-size: 1000% 1000%;
-  -webkit-animation: Wrapper 41s ease infinite;
-  -moz-animation: Wrapper 41s ease infinite;
-  -o-animation: Wrapper 41s ease infinite;
-  animation: Wrapper 41s ease infinite;
 
-@-webkit-keyframes Wrapper {
-  0%{background-position:40% 0%}
-  50%{background-position:61% 100%}
-  100%{background-position:40% 0%}
-}
-@-moz-keyframes Wrapper {
-  0%{background-position:40% 0%}
-  50%{background-position:61% 100%}
-  100%{background-position:40% 0%}
-}
-@-o-keyframes Wrapper {
-  0%{background-position:40% 0%}
-  50%{background-position:61% 100%}
-  100%{background-position:40% 0%}
-}
-@keyframes Wrapper {
-  0% {
-    background-position: 40% 0%
-  }
-  50% {
-    background-position: 61% 100%
-  }
-  100% {
-    background-position: 40% 0%
-  }
-}
 
 `
 

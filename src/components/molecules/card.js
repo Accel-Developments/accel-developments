@@ -5,17 +5,14 @@ export const Card = styled.div `
   display: inline-block;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.48);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(4px);
   border-radius: 40px;
 
   &:hover {
-   border-bottom-color:  #FEAC5E;
-    border-left-color: #EC6179;
-    border-top-color: #C779D0;
-    border-right-color: #4BC0C8;
+    background: linear-gradient(45deg, #FEAC5E, #EC6179, #C779D0, #4BC0C8);
+ color: #ffffff!important;
   }
 `
 
@@ -49,12 +46,12 @@ font-style: normal;
 export const Content = styled.div `
 display: grid;
   padding:  calc(15px + 1vw) calc(10px + 1vw) ;
-  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-columns:  1.5fr;
   grid-template-rows: 1fr;
 justify-content: center;
 align-items: stretch;
 grid-template-areas: 
-        "icon text";
+        "text";
 `
 
 

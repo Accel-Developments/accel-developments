@@ -1,19 +1,22 @@
 import React from "react"
 import styled from "styled-components"
-import {Card, Description, Icon, TextWrapper, Content, CardHeading} from "../../molecules/card"
+import {Card, Description,  TextWrapper, Content, CardHeading} from "../../molecules/card"
+
 
 const Container = styled.div`
-display: block;
+  display: block;
+  background: #35354f;
+  background-size: cover;
   padding: calc(100px + 1vw) calc(200px + 1vw);
   @media screen and (max-width: 700px) {
     padding: calc(100px + 1vw) calc(50px + 1vw);
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     padding: calc(100px + 1vw) calc(20px + 1vw);
 
 
   }
-    
+
 `
 
 const Services = styled.div`
@@ -49,7 +52,6 @@ const CardsStyled = styled.div`
 `
 
 
-
 const CardsGrid = () => {
     return(
         <CardsStyled>
@@ -58,7 +60,6 @@ const CardsGrid = () => {
             <Services>
                 <Card>
                     <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>Consulting</CardHeading>
                     <Description>
@@ -69,7 +70,6 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>UX/UI Design & Branding</CardHeading>
                     <Description>
@@ -80,7 +80,6 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>    Business Systems Analysis</CardHeading>
                     <Description>
@@ -92,7 +91,6 @@ const CardsGrid = () => {
                 </Card>
             <Card>
                 <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>Digital Marketing</CardHeading>
                     <Description>
@@ -104,7 +102,6 @@ const CardsGrid = () => {
             </Card>
                 <Card>
                     <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>Fullstack Development</CardHeading>
                     <Description>
@@ -115,7 +112,6 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                    <Icon> HELLO</Icon>
                   <TextWrapper>
                       <CardHeading>CRM & Customer Card</CardHeading>
                     <Description>
