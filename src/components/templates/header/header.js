@@ -17,11 +17,12 @@ const ButtonWrapper = styled.div`
 
 const Navbar = {
     Wrapper: styled.nav`
-      background-color: rgba(0, 0, 0, 0.71);
+      background-color: rgba(15, 19, 28, 0.71);
       backdrop-filter: blur(10px);
       align-self: flex-start;
-      padding: 15px 50px;
-      height: calc(1vw + 10vh);
+      padding: 10px 50px;
+      z-index: -1;
+      height: calc(1vw + 3rem);
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
@@ -42,7 +43,7 @@ const Navbar = {
             }*/
     `,
     Logo: styled(LogoSvg)`
-      max-height: calc(3rem + 1vw);
+      max-height: calc(2rem + 1vw);
       fill: white;
       @media screen and (max-width: 50rem){
         max-height: calc(3rem + 1vw);

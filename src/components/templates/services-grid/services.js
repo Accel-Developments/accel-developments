@@ -1,12 +1,31 @@
 import React from "react"
 import styled from "styled-components"
 import {Card, Description,  TextWrapper, Content, CardHeading} from "../../molecules/card"
+import {CtaHeading} from "../../atoms/typography";
+import {GradientText} from "../../atoms/gradient-effects";
+import A from "./A.png"
+import B from"./B.png"
+import C from"./C.png"
+import D from"./D.png"
+import E from "./E.png"
+import F from "./F.png"
 
+
+
+const Icon = styled.div`
+grid-area: icon;
+  image-resolution: normal;
+  min-width: 75px;
+  min-height: 75px;
+  background-repeat: no-repeat!important;
+  background-position: top;
+  background-size: contain;
+
+`
 
 const Container = styled.div`
   display: block;
-  background: #35354f;
-  background-size: cover;
+  background: #dad7d7;
   padding: calc(100px + 1vw) calc(200px + 1vw);
   @media screen and (max-width: 700px) {
     padding: calc(100px + 1vw) calc(50px + 1vw);
@@ -52,14 +71,47 @@ const CardsStyled = styled.div`
 `
 
 
+const StyledHeading = styled(CtaHeading)`
+  font-size: calc(2rem + 1vw);
+  color: black;
+  padding-bottom: 5vh;
+`
+
+const IcnA = styled(Icon)`
+  background: url("${A}");
+  
+`
+const IcnB = styled(Icon)`
+  background: url("${B}");
+
+`
+const IcnC = styled(Icon)`
+  background: url("${C}");
+
+`
+
+const IcnD = styled(Icon)`
+  background: url("${D}");
+
+`
+const IcnE = styled(Icon)`
+  background: url("${E}");
+
+`
+
+const IcnF = styled(Icon)`
+  background: url("${F}");
+
+`
 const CardsGrid = () => {
     return(
         <CardsStyled>
         <Container>
-            <h1>Building Digital Experiences That Represent You</h1>
+            <StyledHeading>Building <GradientText>Digital Experiences</GradientText> That Represent <GradientText>You</GradientText></StyledHeading>
             <Services>
                 <Card>
                     <Content>
+                        <IcnA/>
                   <TextWrapper>
                       <CardHeading>Consulting</CardHeading>
                     <Description>
@@ -70,7 +122,8 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                  <TextWrapper>
+                        <IcnB/>
+                        <TextWrapper>
                       <CardHeading>UX/UI Design & Branding</CardHeading>
                     <Description>
                         It starts with an idea, to design, to product. With a story to be told every step of the way.
@@ -80,7 +133,8 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                  <TextWrapper>
+                        <IcnC/>
+                        <TextWrapper>
                       <CardHeading>    Business Systems Analysis</CardHeading>
                     <Description>
                         As technology grows, it also becomes outdated. Drive your business using only the latest.
@@ -91,7 +145,8 @@ const CardsGrid = () => {
                 </Card>
             <Card>
                 <Content>
-                  <TextWrapper>
+                    <IcnD/>
+                    <TextWrapper>
                       <CardHeading>Digital Marketing</CardHeading>
                     <Description>
                         Create connections that will last forever, ensuring your digital brand scales as you do.
@@ -102,7 +157,8 @@ const CardsGrid = () => {
             </Card>
                 <Card>
                     <Content>
-                  <TextWrapper>
+                        <IcnE/>
+                        <TextWrapper>
                       <CardHeading>Fullstack Development</CardHeading>
                     <Description>
                         Building readymade websites, mobile applications, and online business Cards.
@@ -112,7 +168,8 @@ const CardsGrid = () => {
                 </Card>
                 <Card>
                     <Content>
-                  <TextWrapper>
+                        <IcnF/>
+                        <TextWrapper>
                       <CardHeading>CRM & Customer Card</CardHeading>
                     <Description>
                         Connect, Card and Drive your business in the most optimal way with trusted CRM Solution.

@@ -14,7 +14,7 @@ const Banner = styled.div `
 `
 
 const ImageBanner = styled.div`
-  min-height: calc(50rem + 1vw);
+  min-height: calc(5rem + 1vw);
   min-width:100%;
 
 `
@@ -32,7 +32,9 @@ const ImageBannerText = styled.div   `
   }
 `
 const Wrapper = styled.div`
-  padding: 10vh 1vw;
+  padding: 10vh 1vw 20vh 1vw;
+  min-height: calc(40rem + 1vw);
+
 
 
 `
@@ -162,6 +164,12 @@ const Values = () => {
     return (
         <Banner>
 
+            <ImageBanner>
+                <ImageBannerText>
+                    We know every business has potential. It’s just about finding it’s true potential.
+
+                </ImageBannerText>
+            </ImageBanner>
 
             <Wrapper>
                 <Features>
@@ -193,12 +201,7 @@ const Values = () => {
                 </Features>
             </Wrapper>
 
-            <ImageBanner>
-                <ImageBannerText>
-                    We know every business has potential. It’s just about finding it’s true potential.
 
-                </ImageBannerText>
-            </ImageBanner>
         </Banner>
     )
 }

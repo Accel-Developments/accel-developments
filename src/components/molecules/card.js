@@ -5,18 +5,17 @@ export const Card = styled.div `
   display: inline-block;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.48);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 20px rgba(53, 53, 79, 0.18);
+  backdrop-filter: blur(10px);
   border-radius: 40px;
 
   &:hover {
-    background: linear-gradient(45deg, #FEAC5E, #EC6179, #C779D0, #4BC0C8);
- color: #ffffff!important;
+    background: rgb(255, 255, 255);
   }
 `
 
-export const Icon = styled.div `
+export const Icon = styled.img `
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -26,7 +25,7 @@ export const CardHeading = styled.h3 `
 font-family: Poppins, sans-serif;
 font-style: normal;
 font-weight: 600;
-font-size: 22px;
+font-size: 24px;
   grid-area: Heading;
 line-height: 120%;
 color: #6854FC;
@@ -46,12 +45,12 @@ font-style: normal;
 export const Content = styled.div `
 display: grid;
   padding:  calc(15px + 1vw) calc(10px + 1vw) ;
-  grid-template-columns:  1.5fr;
+  grid-template-columns:  0.5fr 1.5fr;
   grid-template-rows: 1fr;
 justify-content: center;
 align-items: stretch;
 grid-template-areas: 
-        "text";
+        "icon text";
 `
 
 

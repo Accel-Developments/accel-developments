@@ -9,9 +9,8 @@ const Home = () => {
     return (
         <>
             <Hero/>
-            <ServicesGrid/>
-            <callToAction/>
             <CtaBanner/>
+            <ServicesGrid/>
             <Values/>
             <ContactBanner/>
 
