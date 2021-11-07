@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import PfIcon from "./finance.png"
-import BgImg from "./banner.png"
+import BgImg from "./bg.png"
 import {Button } from "grommet"
 import {MailOption} from "grommet-icons"
 
 const Banner = styled.section `
-  background: url("${BgImg}"), #333;
+  background: url("${BgImg}"), #333 center center;
+  background-size: cover;
   background-blend-mode: overlay;
   width: 100vw;
 height: 80vh;`

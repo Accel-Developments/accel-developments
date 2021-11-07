@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs  from 'emailjs-com';
-import {Form, TextInput, TextArea, Button, Box,  FormField} from "grommet"
+import {Form, TextInput, TextArea,  Box,  FormField} from "grommet"
 import {Send} from "grommet-icons"
 import {Title} from "./typography"
 import styled from "styled-components";
+import Button from "./Button"
+
 
 const Heading = styled(Title)`
   font-weight: 200;
@@ -40,7 +42,22 @@ export const ContactUs = () => {
     };
 
     const Btn = styled(Button)`
-    color: #FFFFFF;
+      font-weight: 800;
+      padding: 15px 25px;
+      font-size: 1rem;
+      margin: calc(2rem + 1vh) 0 0 0;
+
+      background: #FFFFFF;
+      color: #33cb86;
+
+
+      &:hover {
+        border: none;
+        text-shadow: rgba(0,0,0,0.34);
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #12FFF7 0%, #B3FFAB 100%);
+        border: none;
+      }
     `
 
 
@@ -65,7 +82,9 @@ export const ContactUs = () => {
     <FormField label="Message:" color="brand"  >
         <Area fill={false} name="message" placeholder="Enter your message here..." resize="vertical" size="medium" />
     </FormField>
-            <Btn label="Send" icon={<Send />} color="accent-1" hoverIndicator={{"color":"accent-1","dark":false}} primary={false} secondary reverse  size="large" type="submit" plain={false} margin={{"top":"medium"}} active={false} onClick={sendEmail} />
+                <Btn onClick={sendEmail} >
+                    Submit
+                </Btn>
 
             </Form>
         </Box>

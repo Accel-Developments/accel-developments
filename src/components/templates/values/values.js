@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from "styled-components";
-import BgBanner from "./cta-bg.webp";
-import FlightIcn from "./flights-icn.png";
-import HotelIcn from "./hotels-icn.png"
-import DiningIcn from "./dining-icn.png"
+import BgBanner from "./banner.png";
+import PlanIcn from "./planning-icn.png";
+import VisionIcn from "./vision-icn.png"
+import TransformIcn from "./transform-icn.png"
+import Bg from "./bg.jpg"
 
 const Banner = styled.div `
   width: 100vw;
-  background: #B16852;
+
 `
 
 const ImageBanner = styled.div`
   min-height: calc(50rem + 1vw);
   min-width:100%;
-  background: url(${BgBanner}) top center no-repeat ;
-  background-size: cover ;
+  background: url(${Bg});
+  background-size: cover;
 `
 const ImageBannerText = styled.div   `
   margin: 0 20vw;
@@ -30,9 +31,41 @@ const ImageBannerText = styled.div   `
   }
 `
 const Wrapper = styled.div`
-  background: rgba(54, 49, 107, 0.65);
-  min-height: 400px;
-  padding: calc(1rem + 1vw) 0;
+  padding: 10vh 1vw;
+  background: linear-gradient(354deg, #feac5e, #ec6179, #c779d0, #32a3aa, #4b5ec8);
+  background-size: 1000% 1000%;
+  -webkit-animation: Wrapper 41s ease infinite;
+  -moz-animation: Wrapper 41s ease infinite;
+  -o-animation: Wrapper 41s ease infinite;
+  animation: Wrapper 41s ease infinite;
+
+@-webkit-keyframes Wrapper {
+  0%{background-position:40% 0%}
+  50%{background-position:61% 100%}
+  100%{background-position:40% 0%}
+}
+@-moz-keyframes Wrapper {
+  0%{background-position:40% 0%}
+  50%{background-position:61% 100%}
+  100%{background-position:40% 0%}
+}
+@-o-keyframes Wrapper {
+  0%{background-position:40% 0%}
+  50%{background-position:61% 100%}
+  100%{background-position:40% 0%}
+}
+@keyframes Wrapper {
+  0% {
+    background-position: 40% 0%
+  }
+  50% {
+    background-position: 61% 100%
+  }
+  100% {
+    background-position: 40% 0%
+  }
+}
+
 `
 
 const Features = styled.div`
@@ -164,15 +197,15 @@ const Values = () => {
             <Wrapper>
                 <Features>
                     <Planning>
-                        <Icon src={FlightIcn}/>
+                        <Icon src={PlanIcn}/>
                         <FeatureText>
                             <b>Planning</b><br/>
-                            It's not about only getting to the goal, but being able to adapt when the goal-post needs to move again, or get a new vision.
+                           In a rapidly changing business climate It's not about only getting to the goal, but how we get there and being able to adapt and make a decision.
 
                         </FeatureText>
                     </Planning>
                     <Vision>
-                        <Icon src={HotelIcn}/>
+                        <Icon src={VisionIcn}/>
                         <FeatureText>
                             <b>Vision</b> <br/>
                             Economic changes force businesses to adapt and create more innovative visions for the company and enabling them to find new opportunities for growth.
@@ -180,7 +213,7 @@ const Values = () => {
                         </FeatureText>
                     </Vision>
                     <Transform>
-                        <Icon src={DiningIcn}/>
+                        <Icon src={TransformIcn}/>
                         <FeatureText>
                             <b>Transformation</b><br/>
                             Creating the tools and experience you need to adapt and build new opportunities for customers. Connect, Service and Drive your business in the most optimal way.
